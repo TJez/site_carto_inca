@@ -1,0 +1,435 @@
+/*Corps du site, couleur de fond, couleur du texte, placement en grille*/
+body {
+  background-color: #D5FACA;
+  display: grid;
+  font-family: Arial;
+  text-justify: auto;
+}
+
+fieldset {
+  border-radius: 10px;
+  color: black;
+  text-decoration: none;
+  border-color: rgb(186, 235, 226);
+}
+
+.boutonJeu {
+  text-decoration: none;
+  background-color: #38ada9;
+}
+
+.boutonDeploi {
+  text-decoration: none;
+  background-color: #38ada9;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.produitsDeploi {
+  text-decoration: none;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+legend {
+  color: black;
+  text-decoration: none;
+}
+
+#connexion {
+  text-align: center;
+}
+
+/*Paramétres du titre, police, background du logo, couleur du texte, alignement du texte, placement dans la grille*/
+#titre {
+  font-family: 'Train One', Arial;
+  background-color: #f7fcf0;
+  border-radius: 10px;
+  text-align: center;
+  height: min-content;
+  display: none;
+}
+
+/*Placement de l'image dans le retangle titre*/
+#titre img {
+  margin: 10px;
+  width: 100px;
+}
+
+/* Le bandeau de tête */
+#bandeau {
+  grid-row: 1;
+  grid-column: 1;
+}
+
+#errorMessage {
+  background-color: seashell;
+  color:rgb(161, 15, 15);
+}
+
+#titre:hover {
+  cursor: pointer;
+}
+
+/*Propriétés de la barre de recherche*/
+#searchBar {
+  background-color: #38ada9;
+  display: grid;
+  margin-top: 25px;
+  padding: 5px;
+  border-radius: 5px;
+  grid-column: 1;
+  grid-row: 2;
+  width: 79%;
+  height: min-content;
+  /* display: none; */
+}
+
+#sucess {
+  background-color: rgba(121, 194, 121, 0.795);
+  position: fixed;
+  margin-left: 80%;
+  margin-top: 20px;
+  border-radius: 5px;
+  display: grid;
+  padding: 10px;
+}
+
+#sucess p {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+#boutonCreationCompte {
+  grid-column: 2;
+  grid-row: 2;
+  font-size: 70%;
+  display: inline-block;
+}
+
+#boutonFormulaire {
+  grid-column: 2;
+  grid-row: 1;
+  font-size: 70%;
+  display: inline-block;
+}
+
+#areaSearch {
+  background-color: white;
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  grid-row: 1;
+  grid-column: 1;
+}
+
+#searchButton {
+  background-image: url('../public/img/logos/loupe.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 50%;
+  padding: 5px;
+  grid-row: 1;
+  grid-column: 2;
+}
+
+/* Bouton du header */
+.boutonHeader {
+  margin: 5px;
+  padding: 15px;
+  background-color: #38ada9;
+  color: black;
+  border-radius: 5px;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* header hover */
+.boutonHeader:hover {
+  background-color: #06495f;
+  color:#f7fcf0;
+}
+
+/* header click */
+.boutonHeader:active {
+  background-color: #849fa8;
+}
+
+.boutonJeu {
+  padding: 5px;
+  background-color: transparent;
+  color: black;
+  text-decoration: none;
+  border: none;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+/* jeu hover */
+.boutonJeu:hover {
+  background-color: #06495f;
+  color:#f7fcf0;
+  cursor: pointer;
+}
+
+/* deploiement jeu hover */
+.boutonDeploi:hover {
+  background-color: #06495f;
+  color:#f7fcf0;
+  cursor: pointer;
+}
+
+/* deploiement jeu hover */
+.produitsDeploi:hover {
+  background-color: #06495f;
+  color:#f7fcf0;
+  cursor: pointer;
+}
+
+#boutonCarte {
+  grid-row: 1;
+  grid-column: 3;
+}
+
+#boutonStat {
+  grid-row: 1;
+  grid-column: 4;
+}
+
+#boutonProduit {
+  grid-row: 1;
+  grid-column: 5;
+}
+
+#boutonProduit {
+  grid-row: 1;
+  grid-column: 6;
+}
+
+
+#deconnexion {
+  grid-row: 3;
+  grid-column: 2;
+  font-size: 70%;
+}
+
+#role {
+  grid-row: 2;
+  grid-column: 1;
+}
+
+.box-input {
+  padding: 12px 20px;
+  margin: 8px 0;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-family: 'Courier New', Courier, monospace;
+  overflow: hidden;    
+}
+
+.box-input:focus {
+  background-color: #38ada9ab;
+}
+
+/*Propriétés de la zone de résult
+ats au milieu*/
+#resultat {
+  background-color: #38ada9ab;
+  grid-row: 3 / 5;
+  grid-column: 1;
+  border-radius: 5PX;
+  padding: 10px;
+  margin-top: 10px;
+  margin-left: 307px;
+  margin-right: 400px;
+  display: grid;
+}
+
+#stat {
+  background-color: #38ada9ab;
+  width: 80%;
+  border-radius: 5px;
+  margin-left: 130px;
+  padding-left: 10px;
+}
+
+#visuProduit {
+  grid-column: 3;
+  grid-row: 3;
+  height: 50px;
+  width: 300px;
+}
+
+#selectProduit {
+  grid-column: 1;
+  grid-row: 4;
+  margin-top: 5px;
+  height: 50px;
+  width: 300px;
+}
+
+#lienTelechargement {
+  grid-column: 2;
+  grid-row: 1;
+  width: 25px;
+  height: 25px;
+}
+
+#lienTelechargement img {
+  width: 25px;
+  height: 25px;
+}
+
+#divGraph {
+  grid-row: 3;
+  grid-column: 2;
+}
+
+#miniGraph {
+  grid-row: 3;
+  grid-column: 2;
+}
+
+/*Propriétés de la zone de jeux menu flottant à gauche*/
+#jeu {
+  width: 325px;
+  width: 300px;
+}
+
+/*ul {
+  display: none;
+  border-radius: 5px;
+}*/
+
+#menu_ul {
+  display: none;
+  border-radius: 5px;
+}
+
+#produits_ul {
+  display: none;
+  border-radius: 5px;
+}
+
+.jeu {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#menu {
+  background-color: #38ada9;
+  margin-top: 10px;
+  grid-column: 1;
+  grid-row: 3;
+  height: min-content;
+  width: 300px;
+  border-radius: 10px;
+}
+
+#footer {
+  margin-top: 20px;
+  margin-left: 30%;
+  width: 75%;
+  grid-column: 1;
+  grid-row: 5;
+  text-align: center;
+  background-color: #f7fcf0;
+  width: 420px;
+  opacity: 0.8;
+  border-radius: 5px;
+}
+
+#logoRF {
+  height: 100px;
+  grid-row: 6;
+  grid-column: 1;
+  margin-left: 75px;
+}
+
+#logoIGN {
+  margin-top: 30px;
+  height: 70px;
+  grid-row: 6;
+  grid-column: 1;
+  background-color: white;
+}
+
+/* Objets cachés lors de la recherche pour les garder plus tard dans le affiche.js */
+.coordonneesObjet {
+  display: none;
+}
+
+.infoCorres {
+  display: none;
+}
+
+.tables {
+  display: none;
+}
+
+/* tables existantes dans les schémas pareil pour afficher plus tard */
+
+
+/* Cible l'élément <#afficheSearch> lorsque  */
+/* celui-ci est survolé */
+#afficheSearch:hover {
+  background-color: #0DA6D9;
+  cursor: pointer;
+}
+
+/* div de la carte en lien avec l'IGN */
+#iframeMapIGN {
+  text-align: center;
+}
+
+#iframeMapIGN iframe {
+  border-radius: 5px;
+}
+
+/* DESIGN FIELDSET ENCART POUR AFFICHAGE RESULTAT*/
+/*Fond de l'image*/
+.imageFieldset {
+  background-color: #0DA6D9;
+}
+
+/*Fieldset de la description*/
+.descriptionFieldset {
+  background-color: #0DA6D9;
+}
+
+/*Fieldset de la geometrie*/
+.geometrieFieldset {
+  background-color: #0DA6D9;
+}
+
+/*Fieldset de la symbologie*/
+.symbologieFieldset {
+  background-color: #0DA6D9;
+}
+
+/*Fieldset de la classe*/
+.classeFieldset {
+  background-color: #0DA6D9;
+}
+
+/*Fieldset de la jeu*/
+.jeuFieldset {
+  background-color: #0DA6D9;
+}
+
+/* CSS des titres de résultats */
+div .podResult{
+  font-weight: bold;
+  border-radius: 5px;
+  padding: 1px;
+  padding-left: 2px;
+  display: inline-block;
+}
+
+div .podResult:hover {
+  cursor: pointer;
+  font-weight: 800;
+}
